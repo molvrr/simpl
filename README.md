@@ -12,6 +12,10 @@ x ::= <identifiers>
 i ::= <integers>
 
 b ::= true | false
+
+v ::= i | b
+
+v -/->
 ```
 
 ## Parser
@@ -23,4 +27,9 @@ Precedência: `TIMES` > `PLUS` > `LEQ` > `ELSE` > `IN`
 %left           LEQ
 %left           PLUS
 %left           TIMES
+```
+
+```rust
+T := fun a -> fun b -> a
+F := fun a -> fun b -> b
 ```
