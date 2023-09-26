@@ -2,6 +2,7 @@ type bop =
   | Add
   | Mul
   | Leq
+[@@deriving show]
 
 type expr =
   | Var of string
@@ -10,3 +11,4 @@ type expr =
   | Binop of bop * expr * expr
   | Let of string * expr * expr
   | If of expr * expr * expr
+[@@deriving show]

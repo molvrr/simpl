@@ -19,6 +19,7 @@
               utop
               menhir
               ounit2
+              ppx_deriving
             ];
         };
       });
